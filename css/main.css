@@ -1,0 +1,402 @@
+html,
+body {
+  font-family: "Proxima Nova";
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+div,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  color: #000;
+  font-weight: normal;
+  list-style: none;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+}
+
+* {
+  outline: none;
+}
+
+header.header {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+header.header .header_container_upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 0.5px solid #F35D51;
+}
+
+header.header .header_container_upper_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 5px 0;
+}
+
+header.header .header_container_upper_box_icon {
+  margin-right: 10px;
+}
+
+header.header .header_container_upper_box_arrow {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+header.header .header_container_upper_box_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.header .header_container_upper_box_dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  opacity: 0;
+  visibility: hidden;
+  min-width: 200px;
+}
+
+header.header .header_container_upper_box_dropdown.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+header.header .header_container_upper_box_dropdown_item {
+  margin-left: 25px;
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 16px;
+  color: #313A59;
+}
+
+header.header .header_container_lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.header .header_container_lower .head-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.header .header_container_lower .head-wrap_lang {
+  margin: 25px 0 40px 0;
+}
+
+header.header .header_container_lower_box {
+  padding: 25px 10px 40px 10px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+header.header .header_container_lower_box:hover {
+  background: #F35D51;
+}
+
+header.header .header_container_lower_box:hover .header_container_lower_box_link {
+  text-decoration: none;
+  color: #fff;
+}
+
+header.header .header_container_lower_box:hover .header_container_lowew_box_arrow path {
+  fill: #fff;
+}
+
+header.header .header_container_lower_box_link {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 16px;
+  height: 100%;
+  color: #313A59;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+header.header .header_container_lower_box_arrow {
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+header.header .header_container_lower_box.relative_link {
+  position: relative;
+}
+
+header.header .header_container_lower_box .drowdown {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  opacity: 0;
+  visibility: hidden;
+  min-width: 100px;
+}
+
+header.header .header_container_lower_box .drowdown.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+header.header .header_container_lower_box .drowdown_item {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 16px;
+  color: #313A59;
+}
+
+header.header .header_container_lower_link {
+  padding: 25px 10px 40px 10px;
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 16px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  color: #313A59;
+}
+
+header.header .header_container_lower_link:hover {
+  background: #F35D51;
+  text-decoration: none;
+  color: #fff;
+}
+
+header.header .header_container_lower_auth {
+  margin: 25px 0 40px 0;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.header .header_container_lower_auth_icon {
+  margin-right: 10px;
+}
+
+header.header .header_container_lower_auth_link {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 14px;
+  color: #313A59;
+}
+
+header.header .header_container_lower_auth_span {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 14px;
+  margin: 0 5px;
+  color: #313A59;
+}
+
+header.header .header_container_lower_lang {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 14px;
+  color: #313A59;
+}
+
+header.header .header_container_lower_lang.active {
+  color: #F35D51;
+}
+
+header.header .header_container_lower_span {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 14px;
+  margin: 0 3px;
+  color: #313A59;
+}
+
+header.header .header_container_lower_basket {
+  margin: 20px 0 40px 0;
+  position: relative;
+}
+
+header.header .header_container_lower_basket_count {
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+section.pagePath {
+  background: #F5F5F5;
+  margin-top: 3px;
+}
+
+section.pagePath .breadcrumb {
+  background: transparent;
+}
+
+section.pagePath .breadcrumb-item a {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 14px;
+  color: #626262;
+}
+
+section.pagePath .breadcrumb-item a:hover {
+  text-decoration: none;
+  color: #626262;
+}
+
+section.pagePath .breadcrumb .breadcrumb-item.active {
+  color: #111;
+}
+
+section.pagePath .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+}
+
+section.garantySection {
+  padding: 60px 0;
+}
+
+section.garantySection .garanty_container_title {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 36px;
+  text-align: center;
+  text-align: center;
+  color: #313A59;
+  margin-bottom: 30px;
+}
+
+section.garantySection .garanty_container_text {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 18px;
+  color: #626262;
+  margin-bottom: 50px;
+}
+
+section.garantySection .garanty_container_subtitle {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  text-align: center;
+  color: #313A59;
+  max-width: 1100px;
+  margin-bottom: 25px;
+}
+
+section.garantySection .garanty_container_grid_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+section.garantySection .garanty_container_grid_item_icon {
+  margin-bottom: 30px;
+}
+
+section.garantySection .garanty_container_grid_item_icon path {
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+section.garantySection .garanty_container_grid_item_text {
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #313A59;
+}
+
+section.garantySection .garanty_container_grid_item:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+section.garantySection .garanty_container_grid_item:hover .garanty_container_grid_item_icon path {
+  fill: #F35D51;
+}
+/*# sourceMappingURL=main.css.map */
