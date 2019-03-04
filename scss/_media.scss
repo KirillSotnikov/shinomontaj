@@ -62,6 +62,19 @@
     header.header .header_container_lower_auth{
         margin-left: 5px;
     }
+    section.blogSection .blog_container_box{
+        flex-direction: column;
+    }
+    section.blogSection .blog_container_box_img{
+        width: 100%;
+    }
+    section.blogSection .blog_container_box_item{
+        min-height: unset;
+        padding: 0;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
 }
 @media screen and (max-width:425px){
     section.garantySection .garanty_container_grid_item_text{

@@ -520,6 +520,96 @@ section.garantySection .garanty_container_grid_item:hover .garanty_container_gri
   fill: #F35D51;
 }
 
+section.blogSection {
+  padding: 60px 0;
+}
+
+section.blogSection .blogSection_title {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #313A59;
+}
+
+section.blogSection .blog_container_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+section.blogSection .blog_container_box_img {
+  width: 45%;
+}
+
+section.blogSection .blog_container_box_item {
+  padding-left: 30px;
+  padding-right: 30px;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+section.blogSection .blog_container_box_item:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+section.blogSection .blog_container_box_item_title {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #313A59;
+}
+
+section.blogSection .blog_container_box_item_text {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 14px;
+  color: #626262;
+}
+
+section.blogSection .blog_pagination {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.blogSection .blog_pagination_item {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 18px;
+  margin: 0 2px;
+  color: #313A59;
+}
+
+section.blogSection .blog_pagination_item.currentPage {
+  font-family: "Proxima Nova Semibold";
+}
+
 @media screen and (max-width: 1100px) {
   header.header .header_container_lower_link {
     padding-left: 5px;
@@ -587,6 +677,22 @@ section.garantySection .garanty_container_grid_item:hover .garanty_container_gri
 @media screen and (max-width: 500px) {
   header.header .header_container_lower_auth {
     margin-left: 5px;
+  }
+  section.blogSection .blog_container_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.blogSection .blog_container_box_img {
+    width: 100%;
+  }
+  section.blogSection .blog_container_box_item {
+    min-height: unset;
+    padding: 0;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
   }
 }
 
