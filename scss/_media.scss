@@ -1,0 +1,101 @@
+@media screen and (max-width:1100px){
+    header.header .header_container_lower_link{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    header.header .header_container_lower_box{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    header.header .header_container_lower_auth{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width:991px){
+    .header_container_lower_menu{
+        display: block;
+        width: 30px;
+    }
+    header.header .header_container_lower_link{
+        display: none;
+    }
+    header.header .header_container_lower_box.relative_link{
+        display: none;
+    }
+    header.header .header_container_lower_auth{
+        margin: 0 5px;
+        margin-left: 10vw;
+    }
+    header.header .header_container_lower_basket{
+        margin: 0 5px;
+    }
+    header.header .header_container_lower .head-wrap_lang{
+        margin: 0 5px;
+    }
+    header.header .header_container_lower{
+        padding: 10px 0;
+    }
+    footer.footer .footer_nav_list_item{
+        margin-bottom: 10px;
+    }
+    footer.footer .footer_nav_logo_icon{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:768px){
+    header.header .header_container_upper_box.tablet_hidden{
+        display: none;
+    }
+    header.header .header_container_upper_box_dropdown{
+        left: unset;
+        right: 0;
+    }
+}
+@media screen and (max-width:700px){
+    footer.footer .footer_nav_list{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:500px){
+    header.header .header_container_lower_auth{
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width:425px){
+    section.garantySection .garanty_container_grid_item_text{
+        font-size: 16px;
+    }
+    section.garantySection .garanty_container_subtitle{
+        font-size: 20px;
+    }
+    footer.footer .footer_grid_item_input{
+        font-size: 16px;
+    }
+    footer.footer .footer_grid_item_btn{
+        font-size: 16px;
+    }
+    header.header .header_container_lower_auth_link{
+        display: none;
+    }
+    header.header .header_container_lower_auth_span{
+        display: none;
+    }
+    header.header .header_container_lower_auth{
+        margin-left: 10vw;
+    }
+    header.header .header_container_lower_link_logo_item{
+        width: 70px;
+    }
+    header.header .header_container_upper_box_icon{
+        margin-right: 5px;
+    }
+    header.header .header_container_upper_box_text{
+        font-size: 12px;
+    }
+    header.header .header_container_upper_box_dropdown_item{
+        font-size: 12px;
+        text-align: right;
+    }
+}
