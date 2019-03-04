@@ -5,6 +5,10 @@ switch (pageId) {
         headerDropdown();
         break;
     }
+    case 'blogPage': {
+        headerDropdown();
+        break;
+    }
 }
 
 

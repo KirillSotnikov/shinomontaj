@@ -136,6 +136,10 @@ header.header .header_container_lower {
           align-items: center;
 }
 
+header.header .header_container_lower .header_container_lower_menu {
+  display: none;
+}
+
 header.header .header_container_lower .head-wrap {
   display: -webkit-box;
   display: -ms-flexbox;

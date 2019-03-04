@@ -63,6 +63,9 @@ header.header{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            .header_container_lower_menu{
+                display: none;
+            }
             .head-wrap{
                 display: flex;
                 align-items: center;
