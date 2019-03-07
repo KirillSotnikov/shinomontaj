@@ -1,0 +1,114 @@
+section.basket_section{
+    padding: 60px 0;
+    overflow: auto;
+    .table td, .table th{
+        border: none;   
+    }
+    .table{
+        thead{
+            background: #F5F5F5;
+            tr{
+                th{
+                    border: none;
+                }
+            }
+        }
+        tbody{
+            tr{
+                border-bottom: 1px solid #eee;
+                &:last-child{
+                    border: none;
+                }
+                th{
+                    vertical-align: middle;
+                    .removeGood{
+                        cursor: pointer;
+                    }
+                    font-family: $regular;
+                    line-height: 33px;
+                    font-size: 18px;
+
+                    color: #626262;
+                }
+                td{
+                    vertical-align: middle;
+                    font-family: $regular;
+                    line-height: 33px;
+                    font-size: 18px;
+
+                    color: #626262;
+                    .goodName{
+                        display: flex;
+                        align-items: center;
+                        &_img{
+                            max-width: 50px;
+                            margin-right: 15px;
+                        }
+                        p{
+                            font-family: $regular;
+                            line-height: 33px;
+                            font-size: 18px;
+
+                            color: #626262;
+                        }
+                    }
+                    .countGood{
+                        span{
+                            margin: 0 3px;
+                            font-family: $regular;
+                            line-height: 33px;
+                            font-size: 18px;
+        
+                            color: #626262;
+                            &.minusCount{
+                                cursor: pointer;
+                            }
+                            &.plusCount{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .basket_section_total{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+        &_text{
+            font-family: $regular;
+            line-height: 33px;
+            font-size: 18px;
+            margin-right: 30px;
+            color: #000000;
+        }
+        &_count{
+            font-family: $regular;
+            line-height: 44px;
+            font-size: 24px;
+            
+            color: #F35D51;
+        }
+    }
+    .basket_section_button{
+        font-family: $regular;
+        line-height: normal;
+        font-size: 18px;
+        text-align: center;
+        width: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        background: #F45E52;
+        border: none;
+        padding: 14px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        cursor: pointer;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    }
+}

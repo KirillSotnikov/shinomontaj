@@ -12,6 +12,15 @@ switch (pageId) {
     case 'shinPage': {
         headerDropdown();
     }
+    case 'postPage': {
+        headerDropdown();
+    }
+    case 'basketPage': {
+        headerDropdown();
+    }
+    case 'contactsPage': {
+        headerDropdown();
+    }
 }
 
 
