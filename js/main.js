@@ -9,6 +9,9 @@ switch (pageId) {
         headerDropdown();
         break;
     }
+    case 'shinPage': {
+        headerDropdown();
+    }
 }
 
 

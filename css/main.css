@@ -543,6 +543,11 @@ section.blogSection .blog_container_box {
   margin-bottom: 30px;
 }
 
+section.blogSection .blog_container_box:hover .blog_container_box_item {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
 section.blogSection .blog_container_box_img {
   width: 45%;
 }
@@ -566,11 +571,6 @@ section.blogSection .blog_container_box_item {
           justify-content: center;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
-}
-
-section.blogSection .blog_container_box_item:hover {
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
 section.blogSection .blog_container_box_item_title {
@@ -608,6 +608,216 @@ section.blogSection .blog_pagination_item {
 
 section.blogSection .blog_pagination_item.currentPage {
   font-family: "Proxima Nova Semibold";
+}
+
+section.shin_advantages {
+  padding: 60px 0;
+}
+
+section.shin_advantages .advantages_title {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 36px;
+  text-align: center;
+  color: #313A59;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+section.shin_advantages .advantages_container_box {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  padding: 0;
+  border-radius: 0px 38px 0px 0px;
+}
+
+section.shin_advantages .advantages_container_box:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 38px 0px 0px;
+}
+
+section.shin_advantages .advantages_container_box:hover .advantages_container_box_item {
+  background: #F35D51;
+  border-radius: 0px 38px 0px 0px;
+}
+
+section.shin_advantages .advantages_container_box:hover .advantages_container_box_icon path {
+  fill: #fff;
+}
+
+section.shin_advantages .advantages_container_box_item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px 38px 0px 0px;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+section.shin_advantages .advantages_container_box_icon {
+  width: 68px;
+}
+
+section.shin_advantages .advantages_container_box_icon path {
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+section.shin_advantages .advantages_container_box_text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 15px 30px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.shin_advantages .advantages_container_box_text p {
+  text-align: center;
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #626262;
+}
+
+section.note_form {
+  padding: 60px 0 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.note_form .note_form_title {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+}
+
+section.note_form .note_form_container_item {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 18px;
+  padding: 14px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #888888;
+}
+
+section.note_form .note_form_container_item_input {
+  outline: none;
+  border: none;
+}
+
+section.note_form .note_form_container_item_btn {
+  color: #FFFFFF;
+  background: #F45E52;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border: none;
+  cursor: pointer;
+}
+
+section.price_section {
+  padding: 60px 0;
+}
+
+section.price_section .price_title {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #313A59;
+}
+
+section.price_section .price_subtitle {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #626262;
+}
+
+section.price_section .price_container_item {
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+section.price_section .price_container_item:hover .price_container_item_table {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+section.price_section .price_container_item_header {
+  padding: 10px 15px;
+  width: 100%;
+  background: #313A59;
+}
+
+section.price_section .price_container_item_header_text {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+section.price_section .price_container_item .table td, section.price_section .price_container_item .table th {
+  border: none;
+  padding: 0 30px;
+}
+
+section.price_section .price_container_item_table {
+  padding: 10px 15px;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+section.price_section .price_container_item_table thead {
+  background: #F5F5F5;
+}
+
+section.price_section .price_container_item_table thead th {
+  padding: 10px 30px !important;
+}
+
+section.price_section .price_container_item_table th, section.price_section .price_container_item_table td {
+  font-family: "Proxima Nova";
+  line-height: 33px;
+  font-size: 15px;
+  color: #626262;
+}
+
+section.price_section .price_container_desc {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 18px;
+  color: #313A59;
+}
+
+section.price_section .price_container_item .table .al-right {
+  text-align: right;
 }
 
 @media screen and (max-width: 1100px) {
@@ -664,6 +874,12 @@ section.blogSection .blog_pagination_item.currentPage {
   header.header .header_container_upper_box_dropdown {
     left: unset;
     right: 0;
+  }
+  section.shin_advantages .advantages_title {
+    font-size: 24px;
+  }
+  section.shin_advantages .advantages_container_box_text p {
+    font-size: 18px;
   }
 }
 
