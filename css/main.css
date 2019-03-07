@@ -1043,6 +1043,331 @@ section.basket_section .basket_section_button {
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
 }
 
+section.contacts_section {
+  padding: 60px 0;
+}
+
+section.contacts_section .contacts_title {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #313A59;
+}
+
+section.contacts_section .contacts_container {
+  background: #F45E52;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+section.contacts_section .contacts_container .contacts_square {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  width: 1000px;
+  height: 1000px;
+}
+
+section.contacts_section .contacts_container .contacts_square-first {
+  right: 60%;
+  background: #313A59;
+  z-index: 2;
+}
+
+section.contacts_section .contacts_container .contacts_square-second {
+  right: 50%;
+  background: #fff;
+  z-index: 1;
+}
+
+section.contacts_section .contacts_container_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.contacts_section .contacts_container_box_map {
+  width: 100%;
+}
+
+section.contacts_section .contacts_container_box_map iframe {
+  width: 100%;
+  height: 350px;
+}
+
+section.contacts_section .contacts_container_box_card {
+  width: 350px;
+  padding-left: 50px;
+}
+
+section.contacts_section .contacts_container_box_card_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+}
+
+section.contacts_section .contacts_container_box_card_item_icon {
+  margin-right: 25px;
+  height: 25px;
+}
+
+section.contacts_section .contacts_container_box_card_item .box_title {
+  font-family: "Proxima Nova";
+  line-height: 19px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+section.contacts_section .contacts_container_box_card_item .box_link {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+section.video_section {
+  padding: 60px 0 100px;
+}
+
+section.video_section .video_container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.video_section .video_container_item {
+  margin-bottom: 20px;
+}
+
+section.video_section .video_container_item_title {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 13px;
+  color: #313A59;
+}
+
+section.video_section .video_container_item_text {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #6E6E6E;
+}
+
+section.video_section .video_container_item iframe {
+  width: 100%;
+}
+
+section.good_section {
+  padding: 30px 0;
+}
+
+section.good_section .good_container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.good_section .good_container_item_image {
+  width: 100%;
+}
+
+section.good_section .good_container_item_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+section.good_section .good_container_item_header_title {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 36px;
+  color: #313A59;
+}
+
+section.good_section .good_container_item_header_cost {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 36px;
+  text-align: right;
+  color: #F35D51;
+}
+
+section.good_section .good_container_item_desc {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #626262;
+}
+
+section.good_section .good_container_item_box {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  margin: 0px;
+  padding: 17px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+section.good_section .good_container_item_box_title {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #313A59;
+}
+
+section.good_section .good_container_item_box_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+section.good_section .good_container_item_box_card .box_text {
+  margin: 5px 0;
+  width: 50%;
+}
+
+section.good_section .good_container_item_box_card .box_text.al-right {
+  text-align: right;
+}
+
+section.good_section .good_container_item_addbasket {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+  color: #F35D51;
+}
+
+section.good_section .good_container_item_btn {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  padding: 9px;
+  background: #313A59;
+  width: 230px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #FFFFFF;
+}
+
+section.moreGoods {
+  padding: 30px 0 60px;
+}
+
+section.moreGoods .goods_title {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #313A59;
+}
+
+section.moreGoods .goods_container_item_box {
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+section.moreGoods .goods_container_item_box:hover {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+section.moreGoods .goods_container_item_box_image {
+  width: 100%;
+}
+
+section.moreGoods .goods_container_item_box_foot {
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+section.moreGoods .goods_container_item_box_foot .box_name {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #313A59;
+}
+
+section.moreGoods .goods_container_item_box_foot .box_grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.moreGoods .goods_container_item_box_foot .box_grid_text {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 16px;
+  margin: 5px 0;
+  color: #626262;
+}
+
+section.moreGoods .goods_container_item_box_foot .box_addBasket {
+  display: block;
+  line-height: normal;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #F35D51;
+}
+
+section.moreGoods .goods_container_item_box_foot .box_btn {
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  background: #313A59;
+  padding: 12px;
+  width: 100%;
+  display: block;
+  color: #FFFFFF;
+}
+
 @media screen and (max-width: 1100px) {
   header.header .header_container_lower_link {
     padding-left: 5px;
@@ -1090,6 +1415,24 @@ section.basket_section .basket_section_button {
   }
 }
 
+@media screen and (max-width: 900px) {
+  section.contacts_section .contacts_container_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.contacts_section .contacts_container_box_card {
+    width: 100%;
+  }
+  section.contacts_section .contacts_container .contacts_square-first {
+    right: 10%;
+  }
+  section.contacts_section .contacts_container .contacts_square-second {
+    right: 0%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   header.header .header_container_upper_box.tablet_hidden {
     display: none;
@@ -1110,6 +1453,15 @@ section.basket_section .basket_section_button {
   footer.footer .footer_nav_list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  section.good_section .good_container_item_header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1132,6 +1484,24 @@ section.basket_section .basket_section_button {
     margin-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.contacts_section .contacts_container_box_map iframe {
+    height: 300px;
+  }
+  section.contacts_section .contacts_container .contacts_square-second {
+    right: -30%;
+  }
+  section.contacts_section .contacts_container .contacts_square-first {
+    right: -10%;
+  }
+  section.video_section .video_container_item_title {
+    font-size: 30px;
+  }
+  section.video_section .video_container_item_text {
+    font-size: 18px;
   }
 }
 
@@ -1169,6 +1539,15 @@ section.basket_section .basket_section_button {
   header.header .header_container_upper_box_dropdown_item {
     font-size: 12px;
     text-align: right;
+  }
+  section.good_section .good_container_item_header_cost {
+    font-size: 30px;
+  }
+  section.good_section .good_container_item_header_title {
+    font-size: 30px;
+  }
+  section.good_section .good_container_item_desc {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -21,6 +21,9 @@ switch (pageId) {
     case 'contactsPage': {
         headerDropdown();
     }
+    case 'openCatalogPage': {
+        headerDropdown();
+    }
 }
 
 

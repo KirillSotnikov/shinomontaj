@@ -1,0 +1,107 @@
+section.contacts_section{
+    padding: 60px 0;
+    .contacts_title{
+        font-family: $regular;
+        line-height: normal;
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #313A59;
+    }
+    .contacts_container{
+        background: #F45E52;
+        padding: 60px 0;
+        position: relative;
+        overflow: hidden;
+        .contacts_square{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            width: 1000px;
+            height: 1000px;
+            &-first{
+                right: 60%;
+                background: #313A59;
+                z-index: 2;
+            }
+            &-second{
+                right: 50%;
+                background: #fff;
+                z-index: 1;
+            }
+        }
+        &_box{
+            display: flex;
+            position: relative;
+            z-index: 3;
+            align-items: center;
+            &_map{
+                width: 100%;
+                iframe{
+                    width: 100%;
+                    height: 350px;
+                }
+            }
+            &_card{
+                width: 350px;
+                padding-left: 50px;
+                &_item{
+                    display: flex;
+                    align-items: center;
+                    margin: 15px 0;
+                    &_icon{
+                        margin-right: 25px;
+                        height: 25px;
+                    }
+                    .box{
+                        &_title{
+                            font-family: $regular;
+                            line-height: 19px;
+                            font-size: 16px;
+                            
+                            color: #FFFFFF;
+                        }
+                        &_link{
+                            font-family: $regular;
+                            line-height: normal;
+                            font-size: 18px;
+                            
+                            color: #FFFFFF;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.video_section{
+    padding: 60px 0 100px;
+    .video_container{
+        align-items: center;
+        &_item{
+            margin-bottom: 20px;
+            &_title{
+                font-family: $regular;
+                line-height: normal;
+                font-size: 36px;
+                text-align: center;
+                margin-bottom: 13px;
+                color: #313A59;
+            }
+            &_text{
+                font-family: $regular;
+                line-height: normal;
+                font-size: 24px;
+                text-align: center;
+
+                color: #6E6E6E;
+
+            }
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+}
