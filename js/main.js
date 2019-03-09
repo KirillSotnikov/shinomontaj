@@ -30,8 +30,31 @@ switch (pageId) {
         addBasket();
         slideFilter();
     }
+    case 'mainPage': {
+        initMainSlider();
+        mainPageTabulation();
+        headerDropdown();
+    }
 }
 
+function initMainSlider(){
+    $('.section_container .slider').slick({
+        slidesToShow:1,
+        slidesToScroll:1,
+        dots: true,
+    });
+}
+
+function mainPageTabulation(){
+    $('[data-tabul]').on('click', function(){
+        let target = $(this).attr('data-tabul');
+
+        $('.section_container_box_tabul_item').removeClass('active');
+        $(this).addClass('active');
+        $('.section_container_box_dropdown').hide();
+        $('.section_container_box_dropdown' + target).show();
+    });
+}
 
 function headerDropdown(){
     $('.header_container_upper_box_arrow').on('click', function(){
