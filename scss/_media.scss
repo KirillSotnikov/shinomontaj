@@ -72,6 +72,9 @@
     section.shin_advantages .advantages_container_box_text p{
         font-size: 18px;
     }
+    .bg-2{
+        display: none;
+    }
 }
 @media screen and (max-width:767px){
     section.catalog_section .catalog_container{
@@ -110,6 +113,19 @@
         margin-top: 20px;
         padding-bottom: 20px;
         border-bottom: 1px solid #eee;
+    }
+}
+@media screen and (max-width:600px){
+    section.first_section .section_container .slider .slide > div{
+        flex-direction: column;
+    }
+    section.first_section .section_container_box{
+        max-width: unset;
+        width: 100%;
+    }
+    section.first_section .section_container_image{
+        margin-top: 30px;
+        width: 100%;
     }
 }
 @media screen and (max-width:500px){

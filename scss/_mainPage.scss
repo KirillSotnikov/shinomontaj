@@ -5,6 +5,7 @@ section.first_section{
     background-position: center;
     background-repeat: no-repeat;
     .section_container{
+        position: relative;
         .slider{
             .slide{
                 > div{
@@ -12,6 +13,42 @@ section.first_section{
                     align-items: center;
                 }
             }
+        }
+        .arrow{
+            position: absolute;
+            top: 105%;
+            z-index: 9;
+            cursor: pointer;
+            &.left{
+                left: 0;
+            }
+            &.right{
+                left: 200px;
+                transform: rotate(180deg)
+            }
+        }
+        .slick-dots{
+            bottom: unset;
+            top: 104%;
+            width: 220px;
+        }
+        .slick-dots li button{
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            border-radius: 100%;
+            margin: 5px;
+        }
+        .slick-dots li button:before{
+            background: #313A59;
+            color: transparent;
+            opacity: 1;
+            border-radius: 100%;
+            transition: all .2s ease-out;
+        }
+        .slick-dots li.slick-active button:before{
+            background: transparent;
+            border: 1px solid #fff;
         }
         &_box{
             max-width: 570px;
@@ -221,6 +258,8 @@ section.advantages_section{
         margin: 0 auto;
         margin-bottom: 30px;
         width: auto;
+        position: relative;
+        z-index: 3;
         &::after{
             content: '';
             position: absolute;
@@ -248,6 +287,9 @@ section.advantages_section{
         align-items: center;
         &_item{
                 position: relative;
+                position: relative;
+                z-index: 2;
+                margin-bottom: 20px;
                 .circle{
                     position: absolute;
                     top: 50%;
@@ -262,6 +304,10 @@ section.advantages_section{
             &_image{
                 position: relative;
                 z-index: 2;
+                width: 100%;
+                max-width: 270px;
+                display: block;
+                margin: 0 auto;
             }
             &_box{
                 display: flex;
