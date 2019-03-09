@@ -2413,6 +2413,53 @@ section.moreGoods .goods_container_item_box_foot .box_addBasket {
   color: #099DEF !important;
 }
 
+.menu-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 40px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.menu-container.active {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.menu-container_item {
+  padding: 5px 0;
+  margin: 5px 0;
+  font-family: "Proxima Nova";
+  line-height: normal;
+  font-size: 18px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  color: #313A59;
+}
+
+.menu-container .menu_closer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1100px) {
   header.header .header_container_lower_link {
     padding-left: 5px;
@@ -2429,7 +2476,7 @@ section.moreGoods .goods_container_item_box_foot .box_addBasket {
 }
 
 @media screen and (max-width: 991px) {
-  .header_container_lower_menu {
+  .header.header .header_container_lower .header_container_lower_menu {
     display: block;
     width: 30px;
   }

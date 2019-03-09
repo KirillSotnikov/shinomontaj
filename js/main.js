@@ -3,38 +3,56 @@ const pageId = $('main').attr('id');
 switch (pageId) {
     case 'garantyPage': {
         headerDropdown();
+        menuFunc();
         break;
     }
     case 'blogPage': {
         headerDropdown();
+        menuFunc();
         break;
     }
     case 'shinPage': {
         headerDropdown();
+        menuFunc();
     }
     case 'postPage': {
         headerDropdown();
+        menuFunc();
     }
     case 'basketPage': {
         headerDropdown();
+        menuFunc();
     }
     case 'contactsPage': {
         headerDropdown();
+        menuFunc();
     }
     case 'openCatalogPage': {
         headerDropdown();
         addBasket();
+        menuFunc();
     }
     case 'catalogPage': {
         headerDropdown();
         addBasket();
         slideFilter();
+        menuFunc();
     }
     case 'mainPage': {
         initMainSlider();
         mainPageTabulation();
         headerDropdown();
+        menuFunc();
     }
+}
+
+function menuFunc(){
+    $('.header_container_lower_menu').click(function(){
+        $('.menu-container').addClass('active');
+    });
+    $('.menu_closer').click(function(){
+        $('.menu-container').removeClass('active');
+    });
 }
 
 function initMainSlider(){
