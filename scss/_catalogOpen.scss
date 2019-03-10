@@ -71,6 +71,9 @@ section.good_section{
                 display: block;
                 margin-top: 40px;
                 color: #F35D51;
+                &.hidden{
+                    display: none;
+                }
 
             }
             &_btn{

@@ -1946,6 +1946,10 @@ section.good_section .good_container_item_addbasket {
   color: #F35D51;
 }
 
+section.good_section .good_container_item_addbasket.hidden {
+  display: none;
+}
+
 section.good_section .good_container_item_btn {
   font-family: "Proxima Nova";
   line-height: normal;

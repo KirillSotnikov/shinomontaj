@@ -88,14 +88,9 @@ function headerDropdown(){
 
 function addBasket(){
     $('.good_container_item_addbasket').on('click', function(){
-        $(this).html('Перейти в корзину');
-        addHref($(this), 'basket.html');
+        $('.good_container_item_addbasket').removeClass('hidden');
+        $(this).addClass('hidden');
     });
-}
-function addHref(item, link){
-    setTimeout(function(){
-        item.attr('href', link);
-    }, 100);
 }
 
 function slideFilter(){
