@@ -76,6 +76,11 @@ header.header{
             &_box{
                 padding: 25px 10px 40px 10px;
                 transition: all .2s ease-out;
+                &.active{
+                    .header_container_lowew_box_arrow{
+                        transform: rotate(-180deg);
+                    }
+                }
                 &:hover{
                     background: #F35D51;
                     .header_container_lower_box_link{
@@ -211,3 +216,6 @@ header.header{
         }
     }
 } 
+header.header .header_container_lower_box .header_container_lowew_box_arrow{
+    transition: all .2s ease-out;
+}

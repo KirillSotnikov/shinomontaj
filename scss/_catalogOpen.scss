@@ -85,6 +85,10 @@ section.good_section{
                 margin: 0 auto;
                 margin-top: 15px;
                 color: #FFFFFF;
+                transition: all .3s ease-out;
+                &:hover{
+                    background: #F35D51;
+                }
             }
         }
     }

@@ -82,6 +82,20 @@ section.video_section{
         align-items: center;
         &_item{
             margin-bottom: 20px;
+            &.video_box{
+                position: relative;
+                .circle{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: #f5f5f5;
+                    border-radius: 100%;
+                    width: 425px;
+                    height: 425px;
+                    z-index: 1;
+                }
+            }
             &_title{
                 font-family: $regular;
                 line-height: normal;
@@ -89,18 +103,23 @@ section.video_section{
                 text-align: center;
                 margin-bottom: 13px;
                 color: #313A59;
+                position: relative;
+                z-index: 2;
             }
             &_text{
                 font-family: $regular;
                 line-height: normal;
                 font-size: 24px;
                 text-align: center;
-
+                position: relative;
+                z-index: 2;
                 color: #6E6E6E;
 
             }
             iframe{
                 width: 100%;
+                position: relative;
+                z-index: 2;
             }
         }
     }

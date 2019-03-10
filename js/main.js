@@ -82,13 +82,20 @@ function headerDropdown(){
     });
     $('.relative_link .header_container_lower_box_link').on('click', function(){
         $('.header_container_lower_box .drowdown').toggleClass('active');
+        $(this).parent().toggleClass('active');
     })
 }
 
 function addBasket(){
     $('.good_container_item_addbasket').on('click', function(){
         $(this).html('Перейти в корзину');
+        addHref($(this), 'basket.html');
     });
+}
+function addHref(item, link){
+    setTimeout(function(){
+        item.attr('href', link);
+    }, 100);
 }
 
 function slideFilter(){
