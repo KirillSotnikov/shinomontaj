@@ -1,6 +1,8 @@
 section.basket_section{
     padding: 60px 0;
-    overflow: auto;
+    .divTable{
+        overflow: auto;
+    }
     .table td, .table th{
         border: none;   
     }
